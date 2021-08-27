@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="./img/1593348421_crazy-rich-asians.jpeg" alt="poster" width="800" height="400">
+
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/200x200.png" alt="poster" width="800" height="400">
+        
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/a81b74e0aea099a3a10d9d0b6cb7f2.jpeg" alt="poster" width="800" height="400">
+
+        </div>
+        <div class="swiper-slide">
+            <img src="./img/maxresdefault.jpeg" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img/edbf1918e2fc9e6fbf5ab93ee87ad275.jpeg" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img/regnum_picture_1553688907838636_normal.jpeg" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img/Shadow-and-Bone-Netflix.jpeg" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img/ss-main-min.jpeg" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img/The-kissing-booth-3-1440x960.png" alt="poster">
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./img//w1500_45679196.jpeg" alt="poster">
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      let swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+         
+        },
+        autoplay: {
+            delay: 2000,
+            stopOnLastSlide: false,
+            disableOnInteraction:true
+        }
+      });
+
+    </script>
+  </body>
+</html>
